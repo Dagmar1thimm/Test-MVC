@@ -1,0 +1,107 @@
+﻿@model MVC_EF_Insurance.Models.InsuranceQuery
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>InsuranceQuery</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.birthdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.birthdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.car_year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.car_year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.car_make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.car_make)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.car_model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.car_model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tickets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tickets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dui)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dui)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coverage_full)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coverage_full)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.calculated_rate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.calculated_rate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
